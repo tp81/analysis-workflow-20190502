@@ -1,5 +1,4 @@
 setImageType('BRIGHTFIELD_H_DAB');
-setColorDeconvolutionStains('{"Name" : "H-DAB default", "Stain 1" : "Hematoxylin", "Values 1" : "0.65111 0.70119 0.29049 ", "Stain 2" : "DAB", "Values 2" : "0.26917 0.56824 0.77759 ", "Background" : " 255 255 255 "}');
 if (!isTMADearrayed()) {
 	runPlugin('qupath.imagej.detect.dearray.TMADearrayerPluginIJ', '{"coreDiameterPixels": 1800.0,  "labelsHorizontal": "1-14",  "labelsVertical": "A-L",  "labelOrder": "Column first",  "densityThreshold": 5,  "boundsScale": 105}');
 	return;
